@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mike's Market | Home</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel='stylesheet'>
+        <script src="login.js"></script>
+    </head>
+    <body>
+    <div id='wrapper'>
+        <nav>
+            <ul>
+                <li><a href="/web/index.html">Home</a></li>
+                <li><a href="/web/register.html">Registration</a></li>
+                <li><a href="items.html">Items</a></li>
+                <li><a href='cart.html'>Cart</a></li>
+                <li><a href='orders.html'>Order History</a></li>
+            </ul>
+        </nav>
+        <header>
+        <h1>Mike's Market</h1>
+        <img id='shoppingCart' src='https://datsunspirit.com/wp-content/uploads/2015/04/shopping-cart-hi.png' alt='cart'> 
+        <p>A place for buyers and sellers alike. The aim of Mike's 
+        Market is to provide you with everything you need and in the 
+        quickest time possible from the time you click order.</p>
+        </header>
+        <div id="loginField">
+            <label>Username: </label><input type='text' id='user'>
+            <label>Password: </label><input type='password' id='pass'>
+            <button id="login" onclick="login()">Login</button><br>
+        </div>
+        <p id="errorMsg"></p>
+        <p id="welcome"></p>
+        <p id='promo'>For prices as low as $20!!!</p>
+        <img id='mascot' src='http://assets.sbnation.com/assets/1280371/Sam_los_angeles_1984.png' alt='mascot'>
+        <div>
+            <img src='http://cdn.toptenreviews.com/rev/scrn/large/58228-emerson-led-tv3.jpg' alt='Items for Sale' id='slideshow'><br>
+            <button onclick='backward()'>&lt;-</button>
+            <button onclick='forward()'>-&gt;</button>
+        </div>
+        <footer id="main_footer">
+		<ul>
+			<li><a href="https://www.facebook.com/profile.php?id=100000143260199">Facebook</a></li>
+			<li><a href="https://twitter.com/mjorda39">Twitter</a></li>
+		</ul>
+		<p>&copy;Copyright Michael Jordan 2016</p>
+	</footer>
+    </div>
+    </body>
+</html>
